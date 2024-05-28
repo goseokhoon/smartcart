@@ -52,7 +52,7 @@ public class MapActivity extends AppCompatActivity implements BeaconConsumer {
 
         // iBeacon 포맷 설정
         beaconManager.getBeaconParsers().add(new BeaconParser().
-                setBeaconLayout(BeaconParser.EDDYSTONE_UID_LAYOUT));
+                setBeaconLayout("m:2-3=0215,i:4-19,i:20-21,i:22-23,p:24-24"));
 
         // 비콘 서비스 연결
         beaconManager.bind(this);

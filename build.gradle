@@ -1,0 +1,22 @@
+buildscript {
+    repositories {
+        google() // Google Maven 저장소 추가
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:4.3.1' // 최신 버전으로 변경
+        // 다른 의존성
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        mavenCentral() // Maven Central 저장소 추가
+    }
+}
+
+
+
+
+
